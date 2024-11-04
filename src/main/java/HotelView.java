@@ -135,7 +135,7 @@ public class HotelView {
         System.out.println("\nAvailable Rooms:");
         for (int i = 0; i < rooms.size(); i++) {
             Room room = rooms.get(i);
-            System.out.printf("%d. %s - Rate: $%.2f%n",
+            System.out.printf("%d. %s - Rate: P%.2f%n",
                     i + 1, room.getRoomType(), room.getRate());
         }
     }
@@ -150,7 +150,7 @@ public class HotelView {
             System.out.printf("Reservation ID: %d%n", reservation.getId());
             System.out.printf("Guest: %s%n", reservation.getGuest().getName());
             System.out.printf("Room Type: %s%n", reservation.getRoom().getRoomType());
-            System.out.printf("Rate: $%.2f%n", reservation.getRoom().getRate());
+            System.out.printf("Rate: P%.2f%n", reservation.getRoom().getRate());
             System.out.println("------------------------");
         }
     }
