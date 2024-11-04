@@ -1,10 +1,12 @@
+
 public abstract class Room {
+
     protected double rate;
     protected boolean isAvailable;
 
     public Room(double rate) {
         this.rate = rate;
-        this.isAvailable = true;  
+        this.isAvailable = true;
     }
 
     public abstract String getRoomType();

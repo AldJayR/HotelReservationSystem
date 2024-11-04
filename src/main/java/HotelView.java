@@ -127,7 +127,7 @@ public class HotelView {
         return new Guest(name, contact, email);
     }
 
-     void displayAvailableRooms(List<Room> rooms) {
+    void displayAvailableRooms(List<Room> rooms) {
         if (rooms.isEmpty()) {
             System.out.println("No available rooms of this type.");
             return;
@@ -139,7 +139,7 @@ public class HotelView {
                     i + 1, room.getRoomType(), room.getRate());
         }
     }
-    
+
     void displayReservations(List<Reservation> reservations) {
         if (reservations.isEmpty()) {
             System.out.println("\nNo current reservations.");
