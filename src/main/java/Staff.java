@@ -1,7 +1,7 @@
 
 public class Staff implements Observer {
-    String name;
-    String position;
+    private String name;
+    private String position;
     
     public Staff(String name, String position) {
         this.name = name;
